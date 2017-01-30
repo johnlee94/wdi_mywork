@@ -1,3 +1,5 @@
+console.log("test")
+
 var slot1 = document.getElementById("slot1");
 var slot2 = document.getElementById("slot2");
 var slot3 = document.getElementById("slot3");
@@ -8,9 +10,18 @@ var slot7 = document.getElementById("slot7");
 var slot8 = document.getElementById("slot8");
 var slot9 = document.getElementById("slot9");
 
-var Oimg = document.getElementById("picO");
-var Ximg = document.getElementById("picX");
+var trackerRick = 0;
+var trackerMorty
 
+var Oimg = document.getElementById("imgO");
+var Ximg = document.getElementById("imgX");
+
+
+var Turns=0 ;
+for(var i =0; i<9; i++) {
+  if()
+  Turns++;
+}
 
 //at end of game: functionCheckWin
 if((slot1 === Oimg || slot1 === Ximg) && (slot2 === Oimg || slot2 === Ximg) && (slot3 === Oimg || slot3 === Ximg) && (slot4 === Oimg || slot4 === Ximg) && (slot5 === Oimg || slot5 === Ximg) && (slot6 === Oimg || slot6 === Ximg) && (slot7 === Oimg || slot7 === Ximg) && (slot8 === Oimg || slot8 === Ximg) && (slot9 === Oimg || slot9 === Ximg)) {
@@ -18,7 +29,7 @@ if((slot1 === Oimg || slot1 === Ximg) && (slot2 === Oimg || slot2 === Ximg) && (
 }
 
 slot1.addEventListener('click', function() {
-  slot1 === Oimg;
+  slot1.style.backgroundImage = "url('rick.png')";
 })
 
 slot2.addEventListener('click', function() {
